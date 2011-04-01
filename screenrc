@@ -1,0 +1,17 @@
+escape ^Tt
+bindkey ^z focus
+termcapinfo xterm* ti@:te@
+
+defscrollback 1000
+
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
+startup_message off
+autodetach on
+
+hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s] %{gW} %-w%{= wk}%n %t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] (%l) "
+caption always "%{=r dd}%`%-w%{+b WK}%n %t%{-}%+w %= [%02c]"
+
+#shell -$SHELL
